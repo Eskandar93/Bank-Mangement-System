@@ -1,21 +1,28 @@
 package bank_managment_system;
 
 public class Account {
+	
 	private String userName;
 	
 	private Double balance;
 	
 	private int accountNumber;
 
-	public Account(String user, Double balance, int accountNumber) {
-		this.userName = user;
+	// Filelds Constructor
+	
+	public Account(String userName, Double balance, int accountNumber) {
+		this.userName = userName;
 		this.balance = balance;
 		this.accountNumber = accountNumber;
 	}
 	
+	// deposit method
+	
 	public void deposit(Double amount) {
 		balance += amount;
 	}
+	
+	//withsraw method
 	
 	public void withdraw(Double amount) {
 		if(balance<amount) {
@@ -26,13 +33,15 @@ public class Account {
 		balance -= amount;
 	}
 	
+	// print data of user
+	
 	public void printInfo() {
 		System.out.print("User account number "+"-> "+ accountNumber);
 		System.out.print(" User name "+"-> "+ userName);
 		System.out.println(" Balance amount "+"-> "+ balance);
 	}
-//	public void setUser(String user) {
-//		this.userName = user;
+//	public void setUser(String userName) {
+//		this.userName = userName;
 //	}
 //	
 //	public void setBalance(Double balance) {
@@ -43,7 +52,9 @@ public class Account {
 //		this.accountNumber = accountNumber;
 //	}
 	
-	public String getUser() {
+	// getter method
+	
+	public String getUserName() {
 		return userName;
 	}
 	
