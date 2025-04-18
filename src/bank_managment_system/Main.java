@@ -17,8 +17,8 @@ public class Main {
 			System.out.println("5-) Search an account by User Name");
 			System.out.println("6-) Search an account by Account Number");
 			System.out.println("7-) find Users Has Amount Greater Than specific amount");
-			System.out.println("9-) Save");
-			System.out.println("10-) Exit");
+			System.out.println("8-) Save");
+			System.out.println("9-) Exit");
 			System.out.println("Please Enter Your Choice!?");
 			
 			Scanner choice = new Scanner(System.in);
@@ -44,11 +44,11 @@ public class Main {
 				case 7 :
 					bank.findUsersHasAmountGreaterThan();
 					break;
-				case 9 :
+				case 8 :
 					bank.writer();
 					System.out.println("Update Is Done");
 					break;
-				case 10 :
+				case 9 :
 					exit=0;
 					System.out.println("Bye See You Soon!");
 					break;
